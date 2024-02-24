@@ -1,8 +1,6 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/web/$1"
-    }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/main.sh" }
   ]
 }
